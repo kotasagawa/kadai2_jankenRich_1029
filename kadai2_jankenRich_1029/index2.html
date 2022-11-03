@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style2.css">
+  <title>じゃんけんBALL</title>
+</head>
+<body>
+  <audio src="img/theme1.mp3" autoplay loop muted></audio>
+  <main id="mainvisual">
+    <div class="comment">
+      <p id="hyouji">さあ始めるか、ワクワクすっぞ！</p>
+    </div>
+    <div  class="character-set">
+      <div class="character-inner1">
+        <div class="janken2">
+          <img id="jankenpon2" src="img/janken-img.png" width="100" height="100">
+        </div>
+        <div class="shouhai">自分の勝ち:<span id="win">0</span>回</div>
+        <img class="character1" src="img/dragon1.png" alt="">
+
+      </div>
+      <div class="character-inner2">
+        <div class="janken1">
+          <img id="jankenpon" src="img/janken-img.png" width="100" height="100">
+        </div>
+                <div class="shouhai">相手の勝ち:<span id="win-enemy">0</span>回</div>
+        <img class="character2" src="img/pikkoro.png" alt="">
+
+      </div>
+    </div>
+    
+    <div class="janken">
+        <button onclick="R_Click(0);" class="btn"> グー</button>
+        <button onclick="R_Click(1);" class="btn"> チョキ</button>
+        <button onclick="R_Click(2);" class="btn"> パー</button>
+    </div>
+
+    <!-- 勝った数を表示 -->
+
+    <div id="Rejan2"></div>
+  <!-- 自分のかめはめ波の枠 -->
+  <div id="nyoibou-frame">
+  
+  </div>
+  <!-- 相手のかめはめ波の枠 -->
+  <div id="nyoibou-frame-enemy" class="enemy-bou">
+ 
+  </div>
+</main>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="main2.js"></script>
+</body>
+</html>
